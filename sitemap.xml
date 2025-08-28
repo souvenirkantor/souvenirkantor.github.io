@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap | Corporate Gifts Indonesia</title>
+  <meta name="description" content="Sitemap Corporate Gifts Indonesia - Temukan semua halaman penting termasuk produk, layanan, blog, dan kontak.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Sitemap Corporate Gifts Indonesia</h1>
+      <p class="lead">Daftar lengkap halaman yang tersedia di situs <strong>Corporate Gifts Indonesia</strong>.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Halaman Utama -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Halaman Utama</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/" class="text-decoration-none">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tentang Perusahaan -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Tentang Perusahaan</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/tentang-kami" class="text-decoration-none">Tentang Kami</a></li>
+              <li><a href="https://corporategifts.biz.id/layanan" class="text-decoration-none">Layanan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk & Kategori -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Produk & Kategori</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/produk/souvenir-kantor" class="text-decoration-none">Souvenir Kantor</a></li>
+              <li><a href="https://corporategifts.biz.id/produk/merchandise-perusahaan" class="text-decoration-none">Merchandise Perusahaan</a></li>
+              <li><a href="https://corporategifts.biz.id/produk/souvenir-custom" class="text-decoration-none">Souvenir Custom</a></li>
+              <li><a href="https://corporategifts.biz.id/produk/paket-promosi" class="text-decoration-none">Paket Promosi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informasi & Pemesanan -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Informasi & Pemesanan</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/cara-pemesanan" class="text-decoration-none">Cara Pemesanan</a></li>
+              <li><a href="https://corporategifts.biz.id/metode-pembayaran" class="text-decoration-none">Metode Pembayaran</a></li>
+              <li><a href="https://corporategifts.biz.id/faq" class="text-decoration-none">FAQ</a></li>
+              <li><a href="https://corporategifts.biz.id/syarat-ketentuan" class="text-decoration-none">Syarat & Ketentuan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Blog</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/blog" class="text-decoration-none">Artikel & Inspirasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Kontak</h4>
+            <ul class="list-unstyled mt-3">
+              <li><a href="https://corporategifts.biz.id/kontak" class="text-decoration-none">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
