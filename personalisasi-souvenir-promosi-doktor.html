@@ -408,26 +408,32 @@
 
     <!-- Daftar Isi Auto Generate -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+  const toc = document.querySelector(".post-toc");
   const tocList = document.getElementById("toc-list");
-  const headings = document.querySelectorAll(".post-content h2");
+  const toggleBtn = document.getElementById("toc-toggle");
+
+  if (!toc || !tocList || !toggleBtn) return;
+
+  // ✅ Awalnya tertutup
+  toc.classList.add("collapsed");
+
+  const headings = document.querySelectorAll(
+  "article.post-card .post-content h2"
+);
 
   headings.forEach((heading) => {
-    const id = heading.id || heading.textContent.trim().toLowerCase().replace(/\s+/g, "-");
-    heading.id = id;
     const li = document.createElement("li");
+    li.className = heading.tagName === "H3" ? "toc-h3" : "";
     const a = document.createElement("a");
-    a.href = "#" + id;
+    a.href = `#${heading.id}`;
     a.textContent = heading.textContent;
     li.appendChild(a);
     tocList.appendChild(li);
   });
 
-  const tocToggle = document.getElementById("toc-toggle");
-  const toggleIcon = document.querySelector(".toggle-icon");
-  tocToggle.addEventListener("click", () => {
-    tocList.classList.toggle("hidden");
-    toggleIcon.textContent = tocList.classList.contains("hidden") ? "▲" : "▼";
+  toggleBtn.addEventListener("click", () => {
+    toc.classList.toggle("collapsed");
   });
 });
 </script>
