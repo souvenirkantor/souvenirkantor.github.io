@@ -2432,6 +2432,191 @@ section,
   color: #004f4f;
 } 
 
+
+/* Pull Quote */
+.blog .pull-quote {
+  margin: 22px 0;
+  padding: 22px 20px;
+  border-left: 4px solid var(--accent-color);
+  background: color-mix(in srgb, var(--background-color), #cdf0f0 50%);
+  border-radius: 12px;
+}
+
+.blog .pull-quote p {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Packages */
+.blog .package-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 12px 0 20px;
+}
+
+@media (min-width: 900px) {
+  .blog .package-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blog .package-card {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 16px;
+  padding: 18px;
+  background: var(--surface-color);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 100%;
+}
+
+.blog .package-card.featured {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent-color), #fff 92%), var(--surface-color));
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: var(--shadow-hard);
+}
+
+.blog .package-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog .package-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: #fbf1d5;
+  color: #8a5b00;
+  letter-spacing: .5px;
+}
+
+.blog .package-card.featured .package-badge {
+  background: #cdf0f0;
+  color: #006e6e;
+}
+
+.blog .package-list {
+  padding-left: 1rem;
+  margin: 4px 0 12px;
+}
+
+.blog .package-list li {
+  margin-bottom: 6px;
+}
+
+/* Table */
+.blog .table-wrap {
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.blog .price-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface-color);
+}
+
+.blog .price-table th,
+.blog .price-table td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.blog .price-table thead th {
+  background: color-mix(in srgb, var(--background-color), #cdf0f0 55%);
+  font-weight: 700;
+}
+
+.blog .price-table tbody tr+tr td {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+
+/* Daftar Isi (TOC) */
+.post-toc {
+  background: color-mix(in srgb, var(--accent-color) 6%, white);
+  border-left: 4px solid var(--accent-color);
+  padding: 16px 20px; /* ✅ sama seperti highlight-quote */
+  margin: 30px 0;     /* ✅ sama */
+  border-radius: 8px;
+  color: var(--accent-color);
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.post-toc h3 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+.post-toc.collapsed ul {
+  max-height: 0;
+}
+
+.post-toc li {
+  margin: 6px 0;
+}
+
+.post-toc li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.post-toc li a:hover {
+  color: var(--accent-color);
+}
+
+.post-toc li.toc-h3 {
+  padding-left: 16px;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.post-toc.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+
+
+/* ===== Highlight Quote ===== */
+.highlight-quote {
+  background: color-mix(in srgb, var(--accent-color) 6%, white); /* efek lembut seperti callout */
+  border-left: 4px solid var(--accent-color);
+  padding: 16px 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  color: var(--accent-color);
+}
+
+
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
