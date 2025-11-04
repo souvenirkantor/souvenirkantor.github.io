@@ -2546,7 +2546,7 @@ section,
 .post-toc {
   background: color-mix(in srgb, var(--accent-color) 6%, white);
   border-left: 4px solid var(--accent-color);
-  padding: 16px 20px; /* ✅ sama seperti highlight-quote */
+  padding: 5px 15px; /* ✅ sama seperti highlight-quote */
   max-width: 800px; /* sesuaikan dengan lebar konten artikelnya */
   margin: 30px auto; /* biar posisinya sejajar tengah seperti isi blog */
   border-radius: 8px;
